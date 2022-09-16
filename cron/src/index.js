@@ -10,7 +10,6 @@ app.use(cors());
 app.post("/", async (req, res) => {
   res.set("Content-Type", "application/json");
   try {
-    if (req.header('x-admin-key') != process.env.ADMIN_KEY) return res.status(401).send("Invalid Admin key");
     const emails = await notify(SupabaseClient);
     return res.send(JSON.stringify({ message: "success", emails }));
   }
