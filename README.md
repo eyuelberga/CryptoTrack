@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/eyuelberga/CryptoTracks">
-    <img src="https://github.com/eyuelberga/CryptoTracks/blob/main/banner.png?raw=true" alt="Crypto Track logo" width="300" />
+  <a href="https://github.com/eyuelberga/CryptoTrack">
+    <img src="https://github.com/eyuelberga/CryptoTrack/blob/main/banner.png?raw=true" alt="Crypto Track logo" width="300" />
   </a>
 </p>
 
