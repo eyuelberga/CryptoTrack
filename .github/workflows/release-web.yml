@@ -1,0 +1,23 @@
+name: Deploy Web Release to Github Pages
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install and Build
+        env:
+          SUPABASE_URL: ${{secrets.SUPABASE_URL}}
+          SUPABASE_KEY: ${{secrets.SUPABASE_KEY}}
+        run: |
+          yarn
+          export VITE_SUPABASE_URL=$SUPABASE_URL
+          export VITE_SUPABASE_KEY=$SUPABASE_KEY
+          yarn build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.7
+        with:
+          branch: gh-pages
+          folder: dist
