@@ -59,6 +59,7 @@ export default function ({ supabase }) {
             email: data.get('email'),
         });
         handleError(error);
+        alert("We have sent you a magic link. Please check your email inbox.")
 
     }
     const handleSignIn = async (data) => {

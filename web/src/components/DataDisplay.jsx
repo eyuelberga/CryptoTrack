@@ -41,7 +41,7 @@ export default function ({ name, image, symbol, ...rest }) {
 
             <StatGroup>
 
-                {Object.keys(METRICS).map((key) => (<Stat key={key} m={2} p={2} bg="gray.50" rounded="lg">
+                {Object.keys(METRICS).map((key) => (<Stat minW="100%" key={key} m={2} p={2} bg="gray.50" rounded="lg">
                     <StatLabel> {key !== "current_price" && <StatArrow type={statArrow(rest[key])} />}{METRICS[key]}</StatLabel>
                     <StatNumber>{rest[key]} {key.includes('percentage') ? "%" : "USD"}</StatNumber>
 
