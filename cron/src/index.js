@@ -19,6 +19,10 @@ app.post("/", async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) => {
+  res.redirect("https://eyuelberga.github.io/CryptoTrack/");
+});
+
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
   console.log(`Running on port ${PORT}.`);
