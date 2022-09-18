@@ -37,6 +37,7 @@ export default function ({ supabase }) {
                 break;
             case AUTH_ACTIONS.LOGIN_MAGIC:
                 await handleSignInMagicLink(data);
+                e.target.reset();
                 break;
             case AUTH_ACTIONS.SIGNUP:
                 await handleSignUp(data);

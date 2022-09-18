@@ -6,26 +6,88 @@
 
 Crypto Track helps you track your Cryptocurrencies and get instant email notification whenever they change.
 
+Cryptocurrency is a volatile asset with lots of ups and downs. Keeping up with the changes can lead to great gains. This tool helps to make this easy. By subscribing to market changes you want to track, CryptoTrack will send you periodic email notifications whevever there is a change. 
+
 ## Features
 
-- Track various market data
+- Track various market data and recieve email notifications
 - Manage your notifications
-- Get latest market data on cryptocurrency
+- View the latest market data on a Cryptocurrency
 
+## Tools
+
+- [Courier](https://https://www.courier.com/): Sending email notifications
+- [Supabase](https://supabase.com/): Authenication and Database Storage
+- [CoinGecko](https://www.coingecko.com/): Latest Cryptocurrency market data API
+- [Vite + React](https://vitejs.dev/) : Frontend web application
+- [Express](https://expressjs.com/) + [Vercel](https://vercel.com/): Webhook for cron job
+
+
+## Preview 
+![Login](images/login.jpg)
+
+![Home](images/home.jpg)
+
+![Latest Data](images/latest_data.jpg)
 
 ## Development
 
-### Installation
+### Web
+
+#### Installation
+
 
 ```bash
-$ yarn
+$  cd web
 ```
 
-### Running the app
+```bash
+$  yarn
+```
+
+#### Running the app
 
 ```bash
 
 $ yarn dev
+```
+
+#### Environment variables
+
+```
+VITE_SUPABASE_URL=
+VITE_SUPABASE_KEY=
+
+```
+
+
+### Cron Webhook
+
+#### Installation
+
+
+```bash
+$  cd cron
+```
+
+```bash
+$  yarn
+```
+
+#### Running the app
+
+```bash
+
+$ yarn start
+```
+
+#### Environment variables
+
+```
+SUPABASE_URL=
+SUPABASE_KEY=
+COURIER_KEY=
+
 ```
 
 ## License
