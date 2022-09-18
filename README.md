@@ -6,7 +6,7 @@
 
 <p align="center">Crypto Track helps you track your Cryptocurrencies and get instant email notification whenever they change.</p>
 
-Cryptocurrency is a volatile asset with lots of ups and downs. Keeping up with the changes can lead to great gains and this tool helps to make this easy. By subscribing to market changes you want to track, CryptoTrack will send you periodic email notifications whevever they change. 
+Cryptocurrency is a volatile asset with lots of ups and downs. Keeping up with the changes can lead to great gains and this tool helps to make this easy. By subscribing to market changes you want to track, CryptoTrack will send you periodic email notifications whenever they change.
 
 ## Features
 
@@ -17,7 +17,7 @@ Cryptocurrency is a volatile asset with lots of ups and downs. Keeping up with t
 ## Tools
 
 - [Courier](https://https://www.courier.com/): Sending email notifications
-- [Supabase](https://supabase.com/): Authenication and Database Storage
+- [Supabase](https://supabase.com/): Authentication and Database Storage
 - [CoinGecko](https://www.coingecko.com/): Latest Cryptocurrency market data API
 - [Vite + React](https://vitejs.dev/) : Frontend web application
 - [Express](https://expressjs.com/) + [Vercel](https://vercel.com/): Webhook for cron job
